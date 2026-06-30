@@ -34,17 +34,10 @@ jobs:
 
             - name: Deploy Compiled Files to VPS via Rsync
               uses: appleboy/scp-action@v0.1.7
-              env:
-                DEPLOY_KEY: ${{secrets.SSH_PRIVATE_KEY}}
-
-                ARGS: "-rltgoDz0 --delete"
-
-                SERVER_PORT: "22"
-
-                FOLDER: dist/
-
-                SERVER_IP: ${{secrets.SERVER_IP}}
-
-                SERVER_USER: ${{secrets.SERVER_USER}}
-
-                SERVER_DESTINATION: "/var/www/html/mykidtracker"
+              with:
+                host: ${{secrets.SERVER_IP}}
+                username: ${{secrets.SERVER_USER}}
+                key: ${{secrets.SSH_PRIVATE_KEY}}
+                port: 22
+                source: "dist/*"
+                target: "/var/www/html/mykidtracker"
