@@ -33,7 +33,7 @@ jobs:
                 echo "SSH_PRIVATE_KEY=${{ secrets.SSH_PRIVATE_KEY }}"
 
             - name: Deploy Compiled Files to VPS via Rsync
-              uses: easingthemes/ssh-deploy@v5.1.0
+              uses: appleboy/scp-action@v0.1.7
               env:
                 DEPLOY_KEY: ${{secrets.SSH_PRIVATE_KEY}}
 
