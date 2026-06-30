@@ -1,0 +1,42 @@
+export interface IDeviceIssueResponseInterface{
+   id: string,
+   ticketId?: string,
+    sender: string,
+    groupName: string,
+    senderName: string,
+    message: string,
+    noteId: string,
+    postTime: number,
+    isIssue: boolean,
+    issueStatus: string,
+    priority:string,
+    category: string,
+    assignee: string,
+    assigneeName: string,
+    previousAssignee: any,
+    transferHistory: [],
+    comments: [
+        {
+            id: string,
+            text: string,
+            commentedBy: string,
+            commentedAt: number
+        }
+    ],
+    tags: [],
+    attachments: [],
+    dueDate: number,
+    reopenCount: any,
+    statusHistory: any,
+    activeStatus: boolean,
+    actionBy: string,
+    updatedBy: string,
+    updatedAt: number,
+    createdBy: string,
+    createdAt: number,
+    divisionId: string,
+    commentAuditLogs: any,
+    updateAuditLogs: any,
+    deviceImei: any,
+    wmsgId: any
+}

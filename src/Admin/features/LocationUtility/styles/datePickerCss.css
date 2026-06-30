@@ -1,0 +1,12 @@
+.react-datepicker-wrapper {
+    width: 100% !important;
+    z-index: 1000 !important;
+}
+
+.react-datepicker__tab-loop .react-datepicker-popper {
+    z-index: 1000;
+}
+
+.react-datepicker {
+    z-index: 3000;
+}

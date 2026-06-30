@@ -1,0 +1,30 @@
+@tailwind components;
+
+
+@layer components{
+   
+}
+
+.searchListContainer {
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .searchListContainer::-webkit-scrollbar {
+    width: 6px;
+    cursor: pointer;
+  }
+
+  .searchListContainer::-webkit-scrollbar-thumb {
+    background: #0D1526;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .searchListContainer::-webkit-scrollbar-thumb:hover {
+    background: #2E6FF2;
+  }
+
+  .searchListContainer::-webkit-scrollbar-track {
+    background: #fcfcfc;
+  }

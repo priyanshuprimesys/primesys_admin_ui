@@ -1,0 +1,50 @@
+[
+    {
+        "id":0,
+        "name":"Select Role",
+        "deviceId":0
+    },
+    {
+        "id":1,
+        "name":"All",
+        "deviceId":0
+    },
+    {
+        "id":2,
+        "name":"Patrolman",
+        "deviceId":2,
+        "alias":"P"
+    },
+    {
+        "id":3,
+        "name":"Keyman",
+        "deviceId":1,
+        "alias":"K"
+    },
+    {
+        "id":4,
+        "name":"Mate",
+        "deviceId":4,
+        "alias":"M"
+    },
+    {
+        "id":5,
+        "name":"USFD",
+        "deviceId":3,
+        "alias":"U"
+    },
+    {
+        "id":6,
+        "name":"GateMitra",
+        "deviceId":5,
+        "selected":false,
+        "alias":"G"
+    },
+    {
+        "id":7,
+        "name":"Stationery Watchman",
+        "deviceId":6,
+        "selected":false,
+        "alias":"SW"
+    }
+]

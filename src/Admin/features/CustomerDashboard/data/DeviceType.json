@@ -1,0 +1,50 @@
+[
+    {
+        "id":"1",
+        "deviceType":"All",
+        "deviceNo":0,
+        "deviceName":"All"
+    },
+    {
+        "id":"2",
+        "deviceType":"Keyman",
+        "deviceNo":1,
+        "deviceName":"Keyman"
+    },
+    {
+        "id":"3",
+        "deviceType":"Patrolman",
+        "deviceNo":2,
+        "deviceName":"Patrolman"
+    },
+    {
+        "id":"4",
+        "deviceType":"USFD",
+        "deviceNo":3,
+        "deviceName":"USFD"
+    },
+    {
+        "id":"5",
+        "deviceType":"Mate",
+        "deviceNo":4,
+        "deviceName":"Mate"
+    },
+    {
+        "id":"6",
+        "deviceType":"Gatemitra",
+        "deviceNo":5,
+        "deviceName":"Gatemitra"
+    },
+    {
+        "id":"7",
+        "deviceType":"Stationery Watchman",
+        "deviceNo":6,
+        "deviceName":"Stationery Watchman"
+    },
+    {
+        "id":"8",
+        "deviceType":"TRD Patrolman",
+        "deviceNo":7,
+        "deviceName":"TRD_PATROLMAN"
+    }
+]

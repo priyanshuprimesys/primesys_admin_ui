@@ -1,0 +1,1 @@
+export const loginQueryKey = 'login-query-key-api';

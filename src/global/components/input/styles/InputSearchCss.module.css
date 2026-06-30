@@ -1,0 +1,28 @@
+@tailwind components;
+
+
+@layer components{
+   
+}
+
+.searchListContainer {
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .searchListContainer::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .searchListContainer::-webkit-scrollbar-thumb {
+    background: #761111; /* Color of the scroll thumb */
+    border-radius: 10px; /* Rounded corners */
+  }
+
+  .searchListContainer::-webkit-scrollbar-thumb:hover {
+    background: #a40b0b; /* Color when hovered */
+  }
+
+  .searchListContainer::-webkit-scrollbar-track {
+    background: #bb0a0a; /* Background color of the scrollbar track */
+  }

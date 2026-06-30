@@ -1,0 +1,25 @@
+  .sticky-col-1 {
+      position: sticky;
+      left: 0px;
+      background-color: white;
+      z-index: 10;
+    }
+
+    /* Sticky second column */
+    .sticky-col-2 {
+      position: sticky;
+      left: 100px; /* Match width of first column */
+      background-color: white;
+      z-index: 10;
+    }
+
+    /* Set widths for sticky columns */
+    .col-w-100 {
+      min-width: 100px;
+      max-width: 100px;
+    }
+
+    .col-w-150 {
+      min-width: 150px;
+      max-width: 150px;
+    }

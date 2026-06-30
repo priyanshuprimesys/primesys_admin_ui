@@ -1,0 +1,25 @@
+.studentContainer{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+.studentContainer::-webkit-scrollbar{
+    width: 6px;
+    cursor: pointer;
+}
+
+.studentContainer::-webkit-scrollbar-thumb{
+    background: #0D1526;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.studentContainer::-webkit-scrollbar-thumb:hover{
+    background: #2E6FF2;
+}
+
+
+.studentContainer::-webkit-scrollbar-track{
+    background: #fcfcfc;
+}

@@ -1,0 +1,25 @@
+.commandDataContainer{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+.commandDataContainer::-webkit-scrollbar{
+    width: 6px;
+    cursor: pointer;
+}
+
+.commandDataContainer::-webkit-scrollbar-thumb{
+    background: #0D1526;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.commandDataContainer::-webkit-scrollbar-thumb:hover{
+    background: #2E6FF2;
+}
+
+
+.commandDataContainer::-webkit-scrollbar-track{
+    background: #fcfcfc;
+}

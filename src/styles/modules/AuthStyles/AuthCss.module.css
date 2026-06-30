@@ -1,0 +1,19 @@
+@tailwind components;
+
+@layer components{
+    .loginFormContainer{
+        @apply  py-8 px-5 w-96 rounded-2xl backdrop-blur-2xl  border-2 border-slate-400 bg-[#ffffff24]
+    }
+    .loginButton{
+        @apply py-2 justify-center w-full bg-primary mt-5 rounded-md text-gray-200 tracking-wider text-sm
+    }
+}
+
+
+.loginAuthContainer{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.56),rgba(0, 0, 0, 0.44)), url('../../../assets/images/AdminBackground.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+}

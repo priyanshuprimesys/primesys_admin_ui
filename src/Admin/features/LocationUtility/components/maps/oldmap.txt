@@ -1,0 +1,160 @@
+import { useEffect, useRef } from "react";
+// import L from "leaflet";
+// import "leaflet/dist/leaflet.css";
+// import { DeviceLocation } from "../../data/schema";
+// import "leaflet-draw";
+// import "leaflet-draw/dist/leaflet.draw.js";
+
+// type Props = {
+//     locations: DeviceLocation[];
+// };
+
+// export default function LeafletMap({ locations }: Props) {
+
+//     const mapRef = useRef<L.Map | null>(null);
+//     const mapContainerRef = useRef<HTMLDivElement | null>(null);
+
+//     // separate layers (VERY IMPORTANT)
+//     const markersRef = useRef<L.LayerGroup | null>(null);
+//     const drawnItemsRef = useRef<L.FeatureGroup | null>(null);
+
+//     /**
+//      CREATE MAP (runs once)
+//      */
+//     useEffect(() => {
+
+//         if (!mapContainerRef.current || mapRef.current) return;
+
+//         const map = L.map(mapContainerRef.current).setView(
+//             [28.6139, 77.2090],
+//             13
+//         );
+
+//         L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+//             attribution: "&copy; OpenStreetMap contributors",
+//         }).addTo(map);
+
+//         /**
+//          ✅ Marker Layer
+//          */
+//         markersRef.current = L.layerGroup().addTo(map);
+
+//         /**
+//          ✅ Drawn Shapes Layer
+//          */
+//         const drawnItems = new L.FeatureGroup();
+//         map.addLayer(drawnItems);
+//         drawnItemsRef.current = drawnItems;
+
+//         /**
+//          ✅ Draw Control
+//          */
+//         const drawControl = new L.Control.Draw({
+//             draw: {
+//                 rectangle: {},
+//                 polygon: false,
+//                 polyline: false,
+//                 circle: false,
+//                 marker: false,
+//                 circlemarker: false,
+//             },
+//             edit: {
+//                 featureGroup: drawnItems,
+//                 edit: false,
+//                 remove: true,
+//             }
+//         });
+
+//         map.addControl(drawControl);
+
+//         /**
+//          ✅ Rectangle Event
+//          */
+//         map.on(L.Draw.Event.CREATED, (e: any) => {
+
+//             const layer = e.layer;
+
+//             // allow only ONE rectangle
+//             drawnItems.clearLayers();
+//             drawnItems.addLayer(layer);
+
+//             const bounds = layer.getBounds();
+
+//             const payload = {
+//                 minLat: bounds.getSouthWest().lat,
+//                 minLng: bounds.getSouthWest().lng,
+//                 maxLat: bounds.getNorthEast().lat,
+//                 maxLng: bounds.getNorthEast().lng,
+//             };
+
+//             console.log("✅ Selected Area:", payload);
+
+//             /**
+//              CALL YOUR API HERE
+//              fetchLocationsInBounds(payload)
+//              */
+//         });
+
+//         mapRef.current = map;
+
+//         return () => {
+//             map.remove();
+//             mapRef.current = null;
+//         };
+
+//     }, []);
+
+
+
+
+//     /**
+//      UPDATE MARKERS
+//      */
+//     useEffect(() => {
+
+//         if (!mapRef.current || !markersRef.current) return;
+
+//         const map = mapRef.current;
+//         const markersLayer = markersRef.current;
+
+//         // 🔥 SAFE marker cleanup
+//         markersLayer.clearLayers();
+
+//         const bounds: L.LatLngTuple[] = [];
+
+//         for (const loc of locations ?? []) {
+
+//             const lat = loc.lat;
+//             const lng = loc.lon;
+
+//             if (lat == null || lng == null) continue;
+
+//             L.marker([lat, lng]).addTo(markersLayer);
+
+//             bounds.push([lat, lng]);
+//         }
+
+//         /**
+//          Auto-fit camera
+//          */
+//         if (bounds.length) {
+//             map.fitBounds(bounds, {
+//                 padding: [40, 40],
+//                 maxZoom: 16
+//             });
+//         }
+
+//     }, [locations]);
+
+
+
+//     return (
+//         <div
+//             ref={mapContainerRef}
+//             style={{
+//                 height: "80vh",
+//                 width: "100%"
+//             }}
+//         />
+//     );
+// }

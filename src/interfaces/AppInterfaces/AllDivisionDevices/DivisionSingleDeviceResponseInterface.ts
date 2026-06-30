@@ -1,0 +1,94 @@
+import { SuccessInterface } from "../SuccessResponseInterface/SuccessInterface";
+
+
+
+export interface DivisionSingleResponse{
+  id: string;
+  deviceImei: number;
+  reportTimeMargin: number;
+  reportDistMargin: number;
+  onTrackMargin: number;
+  shiftType: number;
+  parentId: number;
+  divisionId: string;
+  studentId: string;
+  deviceName: string;
+  lastName: string;
+  deviceSimNo: string;
+  deviceSimImeiNo: string;
+  deviceNo: number;
+  showGoogleAddress: boolean;
+  reportAsIndependentRdps: boolean;
+  version: any;
+  devicePayment: {
+    payment_plan_id: number;
+    device_imei: any;
+    payment_renew_date: number;
+    expiry_date: number;
+    updated_by: any;
+  };
+  location: any;
+  createdAt: any;
+  lastModified: any;
+  deviceTypeId: number;
+  deviceUserType: string;
+  reportEnable: true;
+  trackPids: [];
+  pidUpdate: number;
+  tripWiseReport: boolean;
+  simServiceProvider: any;
+  activationDate: any;
+  updatedBy: any;
+  updatedAt: number;
+  active_status:boolean
+}
+
+
+
+export interface DivisionSingleDeviceResponseInterface
+  extends SuccessInterface {
+  data: {
+    result: [
+      {
+        id: string;
+        deviceImei: number;
+        reportTimeMargin: number;
+        reportDistMargin: number;
+        onTrackMargin: number;
+        shiftType: number;
+        parentId: number;
+        divisionId: string;
+        studentId: string;
+        deviceName: string;
+        lastName: string;
+        deviceSimNo: string;
+        deviceSimImeiNo: string;
+        deviceNo: number;
+        showGoogleAddress: boolean;
+        reportAsIndependentRdps: boolean;
+        version: any;
+        devicePayment: {
+          payment_plan_id: number;
+          device_imei: any;
+          payment_renew_date: number;
+          expiry_date: number;
+          updated_by: any;
+        };
+        location: any;
+        createdAt: any;
+        lastModified: any;
+        deviceTypeId: number;
+        deviceUserType: string;
+        reportEnable: true;
+        trackPids: [];
+        pidUpdate: number;
+        tripWiseReport: boolean;
+        simServiceProvider: any;
+        activationDate: any;
+        updatedBy: any;
+        updatedAt: number;
+        active_status:boolean
+      }
+    ];
+  };
+}

@@ -1,0 +1,1 @@
+export const device_exchange_query_key="device-exchange-query-key";

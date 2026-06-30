@@ -1,0 +1,1 @@
+export const IotDataPacket = "get_iot_data_packet_query";

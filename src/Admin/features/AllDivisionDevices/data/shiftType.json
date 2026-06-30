@@ -1,0 +1,12 @@
+[
+    {
+        "id":1,
+        "name":"Day",
+        "shift":1
+    },
+    {
+        "id":2,
+        "name":"Night",
+        "shift":2
+    }
+]

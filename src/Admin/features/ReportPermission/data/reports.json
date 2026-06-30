@@ -1,0 +1,32 @@
+[
+    { "module": "device_signal_info", "displayName": "Device Signal Info", "reportType": "Device_Signal_Info", "active": true },
+    { "module": "device_battery_status", "displayName": "Device Battery Status", "reportType": "Device_Battery_Status", "active": true },
+
+    { "module": "exception_keyman_report", "displayName": "KeyMan Report", "reportType": "Exception_Report", "active": true },
+    { "module": "exception_patrolman_report", "displayName": "Patrolman Report", "reportType": "Exception_Report", "active": true },
+    { "module": "exception_swm_report", "displayName": "SWM Report", "reportType": "Exception_Report", "active": true },
+    { "module": "exception_usfd_report", "displayName": "USFD Report", "reportType": "Exception_Report", "active": true },
+    { "module": "exception_gatemitra_report", "displayName": "Gatemitra Report", "reportType": "Exception_Report", "active": true },
+    { "module": "exception_mate_report", "displayName": "Mate Report", "reportType": "Exception_Report", "active": true },
+
+    { "module": "todays_device_status", "displayName": "Today's_Device_Status", "reportType": "Todays_Device_Status", "active": true },
+    { "module": "device_on_off_status", "displayName": "Device ON OFF Status", "reportType": "Device_ON_OFF_Status", "active": true },
+
+    { "module": "count_status_report_keyman_report", "displayName": "KeyMan Report", "reportType": "Count_Status_Report", "active": true },
+    { "module": "count_status_report_patrolman_report", "displayName": "Patrolman Report", "reportType": "Count_Status_Report", "active": true },
+    { "module": "count_status_report_swm_report", "displayName": "SWM Report", "reportType": "Count_Status_Report", "active": true },
+    { "module": "count_status_report_usfd_report", "displayName": "USFD Report", "reportType": "Count_Status_Report", "active": true },
+
+    { "module": "division_status_report_keyman_report", "displayName": "KeyMan Report", "reportType": "Division_Status_Report", "active": true },
+    { "module": "division_status_report_patrolman_report", "displayName": "Patrolman Report", "reportType": "Division_Status_Report", "active": true },
+    { "module": "division_status_report_swm_report", "displayName": "SWM Report", "reportType": "Division_Status_Report", "active": true },
+    { "module": "division_status_report_usfd_report", "displayName": "USFD Report", "reportType": "Division_Status_Report", "active": true },
+
+    { "module": "monitor_sos_press", "displayName": "Monitor SOS Press", "reportType": "Monitor_SOS_Press", "active": true },
+
+    { "module": "trip_report_summary_keyman_report", "displayName": "KeyMan Report", "reportType": "Trip_Report_Summary", "active": true },
+    { "module": "trip_report_summary_patrolman_report", "displayName": "Patrolman Report", "reportType": "Trip_Report_Summary", "active": true },
+    { "module": "trip_report_summary_swm_report", "displayName": "SWM Report", "reportType": "Trip_Report_Summary", "active": true },
+    { "module": "trip_report_summary_usfd_report", "displayName": "USFD Report", "reportType": "Trip_Report_Summary", "active": true }
+]
+

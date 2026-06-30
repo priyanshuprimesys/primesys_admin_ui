@@ -1,0 +1,75 @@
+@tailwind components;
+
+
+@layer components{
+
+    /* Main Sidebar Css */
+        .sidebarContainer{
+            @apply  top-0 left-0 w-20 h-screen
+        }
+        /* .sidebarContainer::-webkit-scrollbar{
+            width: 5px;
+        } */
+        .sidebarJumbotron{
+            @apply h-full px-3 py-4 overflow-y-auto bg-primaryDark overflow-x-hidden
+        }
+        .sidebarJumbotron::-webkit-scrollbar{
+            width: 5px;
+        }
+        .sidebarMenuList{
+            @apply space-y-2 font-medium justify-start flex flex-col z-[1000]  overflow-hidden
+        }
+        .sidebarMenuItem{
+            @apply flex items-center px-1 py-1.5 text-gray-400 rounded-lg hover:text-gray-200 
+        }
+
+        /* Sub Sidebar Css */
+
+        .subSidebarContainer{
+            @apply ml-0 w-56 h-screen transition-all -translate-x-full sm:translate-x-0 duration-200 ease-in 
+        }
+
+        .subSidebarContainerClose{
+            @apply ml-0 w-0 h-screen transition-all -translate-x-full sm:translate-x-0 duration-300 ease-out relative
+        }
+
+        .subSidebarJumbotron{
+            @apply h-full px-0 py-4 overflow-y-auto bg-primaryDark overflow-x-hidden
+        }
+        .sidebarIconOpen{
+            @apply ml-[14.5rem] absolute top-[50%] transition-all duration-200 ease-in
+        }
+        .sidebarIconClose{
+            @apply ml-[0.2rem] absolute top-[50%] transition-all duration-150 ease-in
+        }
+
+
+        /* Dashboard Styles */
+}
+
+
+ /*** Dashboard Styles **/
+
+ .dashboardMain{
+    overflow-y: scroll;
+    overflow-x: hidden;
+ }
+
+ .dashboardMain::-webkit-scrollbar{
+    width: 9px;
+    background-color: #0D1526;
+ }
+
+ .dashboardMain::-webkit-scrollbar-thumb{
+    background-color: #0D1526;
+    cursor: pointer;
+ }
+
+ .dashboardMain::-webkit-scrollbar-thumb:hover{
+    background: #2E6FF2;
+}
+
+
+.dashboardMain::-webkit-scrollbar-track{
+    background: #ffffff;
+}

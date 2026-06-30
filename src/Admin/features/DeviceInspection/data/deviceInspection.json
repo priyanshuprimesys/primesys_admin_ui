@@ -1,0 +1,29 @@
+[
+    {
+      "inspection_id": "INSP-20250917-001",
+      "gps_device_no": "GPS-4521",
+      "imei_no": "863451023456789",
+      "issue_as_per_person": "Device not reporting location since morning",
+      "issue_found_in_device": "Loose antenna connector; intermittent GPS fix",
+      "working": false,
+      "remarks": "Antenna re-seated temporarily; recommended replacement of connector and full test"
+    },
+    {
+      "inspection_id": "INSP-20250917-002",
+      "gps_device_no": "GPS-4522",
+      "imei_no": "863451023456790",
+      "issue_as_per_person": "Battery drains quickly",
+      "issue_found_in_device": "Firmware in older version causing frequent wake-ups",
+      "working": true,
+      "remarks": "Updated firmware v1.2.3; battery consumption within expected range after update"
+    },
+    {
+      "inspection_id": "INSP-20250917-003",
+      "gps_device_no": "GPS-4523",
+      "imei_no": "863451023456791",
+      "issue_as_per_person": "No heartbeat in backend",
+      "issue_found_in_device": "SIM PIN locked / no network",
+      "working": false,
+      "remarks": "SIM unlocked and reinserted; device regained network but needs close monitoring for 24h"
+    }
+]

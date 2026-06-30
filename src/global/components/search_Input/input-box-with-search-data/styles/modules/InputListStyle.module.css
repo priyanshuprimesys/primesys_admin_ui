@@ -1,0 +1,17 @@
+@tailwind components;
+
+
+@layer components{
+    .dataList{
+        overflow-x: auto;
+    }
+
+    .dataList::-webkit-scrollbar{
+        width: 5px;
+        background-color: red;
+    }
+
+    .dataList::-webkit-scrollbar-thumb{
+        background-color: aqua;
+    }
+}

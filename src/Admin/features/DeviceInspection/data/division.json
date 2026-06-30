@@ -1,0 +1,22 @@
+[
+    {
+      "id": "DIV-01",
+      "division_name": "North Zone",
+      "report_count": 12
+    },
+    {
+      "id": "DIV-02",
+      "division_name": "South Zone",
+      "report_count": 8
+    },
+    {
+      "id": "DIV-03",
+      "division_name": "East Zone",
+      "report_count": 5
+    },
+    {
+      "id": "DIV-04",
+      "division_name": "West Zone",
+      "report_count": 15
+    }
+]

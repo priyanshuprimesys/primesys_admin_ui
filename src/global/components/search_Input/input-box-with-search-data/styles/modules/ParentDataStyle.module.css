@@ -1,0 +1,25 @@
+.parentDataContainer{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+.parentDataContainer::-webkit-scrollbar{
+    width: 6px;
+    cursor: pointer;
+}
+
+.parentDataContainer::-webkit-scrollbar-thumb{
+    background: #0D1526;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.parentDataContainer::-webkit-scrollbar-thumb:hover{
+    background: #2E6FF2;
+}
+
+
+.parentDataContainer::-webkit-scrollbar-track{
+    background: #fcfcfc;
+}
